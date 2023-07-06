@@ -1,0 +1,22 @@
+#imgbanner {
+    max-height: 223px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  #banner {
+    max-height: 223px;
+    position: relative;
+    border-radius: 20px;
+    margin: 20px;
+  }
+  
+  #TitreAcceuil {
+    color: white;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
