@@ -1,11 +1,12 @@
 import React from 'react';
 import '../App.scss';
+import LOGO from '../images/LOGO.png'
 
 
   const Header = () => {
     return (
       <header>
-        <span>Kasa</span>
+        <img src={LOGO} alt="logo" />
         <nav>
           <ul>
             <li>

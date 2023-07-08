@@ -1,5 +1,5 @@
 /* Réinitialisation de CSS */
-
+@import './mixins.scss';
 /* Remise à zéro des marges et des paddings */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -22,6 +22,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 /* Remise à zéro des styles de base */
 body {
   line-height: 1;
+  font-family: Montserrat;
 }
 
 ol, ul {
@@ -53,15 +54,22 @@ a {
 header {
   color: #FF6060;
   display: flex;
-  padding: 20px;
+  @include margin;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top:20px;
+  align-items: center;
 }
 
 ul {
   display: flex;
   flex-direction: row;
-  right: 10px;
 }
 
 li {
-  margin-right: 20px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-weight: 500;
 }
+
+

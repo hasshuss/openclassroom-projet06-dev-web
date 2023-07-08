@@ -1,5 +1,9 @@
+@import '../../mixins.scss';
+
 #TitreAppart {
     color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
   }
 
 .tag{
@@ -7,14 +11,17 @@
   border-radius:50px;
   background-color: #FF6060;
   color:white;
-  width:150px;
+  width:115px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 0;
 }
 
 .InfosContainer{
-  margin:20px;
+  @include margin;
 }
 
 .picture{
@@ -23,9 +30,15 @@
   width: 80px;
 }
 
-
+.location{
+  color:#FF6060;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 .name{
   color:#FF6060;
+  font-size: 18px;
+  font-weight: 500;
 }
 

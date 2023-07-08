@@ -1,10 +1,12 @@
+@import '../../mixins.scss';
+
 #gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #F6F6F6;
-  margin: 20px;
-  padding: 20px;
+  @include margin;
   border-radius: 20px;
+  margin-top: 20px;
 }
 
 .galleryimg {
@@ -26,4 +28,7 @@
   bottom: 0;
   margin-left: 10px;
   margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  max-width:50%;
 }
