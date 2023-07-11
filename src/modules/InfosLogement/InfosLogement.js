@@ -2,12 +2,17 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Data from '../../data/data.json';
 import './InfosLogement.scss';
-import Stars from '../Stars/Stars.js'
+import Stars from '../Stars/Stars.js';
+import Collapse from '../Collapse/Collapse.js';
 
 const InfosLogement = () => {
   const { id } = useParams();
   const pageData = Data.find((item) => item.id === id);
-
+  const equip = <ul className='equipements'> {pageData.equipments.map((equip) =>(
+    <li className='equipement' key={equip}>{equip}</li>
+    
+    ))}
+    </ul>
   return (
     <article className="InfosContainer">
       <h1 id="TitreAppart">{pageData.title}</h1>
@@ -17,8 +22,25 @@ const InfosLogement = () => {
           <li className="tag" key={tag}>{tag}</li>
         ))}
       </ul>
-      <div className='NameContainer'><span className='name'>{pageData.host.name}</span><img className="picture" src={pageData.host.picture} alt="img" /></div>
-    <Stars logementId={id}/>
+      <div className="NameContainer">
+        <span className="name">{pageData.host.name}</span>
+        <img className="picture" src={pageData.host.picture} alt="img" />
+      </div>
+      <Stars logementId={id} />
+      <div className='collapses'>
+        <div className='collapse'>
+        <Collapse
+          title="Description"
+          content={pageData.description}
+          isOpen={false}
+        /></div>
+        <div className='collapse'>
+        <Collapse 
+          title="Equipements"
+          content={equip}
+          isOpen={false}
+        /></div>
+      </div>
     </article>
   );
 };

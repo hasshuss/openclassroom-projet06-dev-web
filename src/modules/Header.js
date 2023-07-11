@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.scss';
 import LOGO from '../images/LOGO.png'
+import {NavLink} from 'react-router-dom'
 
 
   const Header = () => {
@@ -10,7 +11,7 @@ import LOGO from '../images/LOGO.png'
         <nav>
           <ul>
             <li>
-              <a href="/Accueil">Accueil</a>
+              <NavLink to="/">Acceuil</NavLink>
             </li>
             <li>
               <a href="/About">A propos</a>
