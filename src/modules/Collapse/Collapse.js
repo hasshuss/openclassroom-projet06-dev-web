@@ -10,9 +10,20 @@ const Collapse = ({ title, content, isOpen }) => {
   };
 
   return (
-    <div className='colapse'>
-      <h3 onClick={handleToggle}>{title}</h3><img src={Vector}></img>
-      {!isCollapsed && <div>{content}</div>}
+    <div className='collapse'>
+      <div  onClick={handleToggle} className='title'>
+        <h3>{title}</h3>
+        <img
+          src={Vector}
+          className={`arrow ${isCollapsed ? '' : 'rotate'}`}
+          alt='Arrow'
+        />
+      </div >
+      <div className='content-container'>
+      <div className={`content ${isCollapsed ? '' : 'open'}`}>
+        {content}
+        </div>
+      </div>
     </div>
   );
 };

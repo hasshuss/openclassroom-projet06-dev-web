@@ -1,12 +1,13 @@
 import React from "react";
 import './Banner.scss';
-import IMG from '../../images/IMG.jpg';
+import Background from '../../images/Background.png'
 
-const Banner = () => {
+const Banner = ({title, image}) => {
     return (
         <div id="banner">
-      <img src={IMG} alt="Kasa" id="imgbanner" />
-      <h1 id="TitreAcceuil">Chez vous, partout et ailleurs</h1>
+      <img src={Background} alt='background' className="background"/>
+      <img src={image} alt="Kasa" id="imgbanner" />
+      <h1 id="TitreAcceuil">{title}</h1>
       </div>
       
     );

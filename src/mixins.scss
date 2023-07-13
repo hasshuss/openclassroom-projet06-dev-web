@@ -3,3 +3,12 @@ margin-right:auto;
 margin-left:auto;
 max-width: 1240px;
   }
+
+@mixin background{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:black;
+  opacity:30%;
+  border-radius:20px;
+}

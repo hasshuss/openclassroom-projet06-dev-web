@@ -28,13 +28,13 @@ const InfosLogement = () => {
       </div>
       <Stars logementId={id} />
       <div className='collapses'>
-        <div className='collapse'>
+        <div className='collapseleft'>
         <Collapse
           title="Description"
           content={pageData.description}
           isOpen={false}
         /></div>
-        <div className='collapse'>
+        <div className='collapseright' >
         <Collapse 
           title="Equipements"
           content={equip}
