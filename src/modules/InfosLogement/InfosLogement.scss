@@ -25,6 +25,8 @@
 
 .InfosContainer{
   @include margin;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .picture{
@@ -43,6 +45,8 @@
   color:#FF6060;
   font-size: 18px;
   font-weight: 500;
+  white-space: pre-line;
+  word-break:keep-all;
 }
 
 .equipements{
@@ -59,6 +63,7 @@ flex-direction: column;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .collapseleft{
@@ -68,3 +73,27 @@ flex-direction: column;
 .collapseright{
   width:45%;
 }
+
+.DataContainer{
+  display:flex;
+  flex-direction: row;
+}
+
+.NameContainer{
+  margin-left: auto;
+  display:flex;
+  flex-direction: column;
+}
+
+.names{
+  display:flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

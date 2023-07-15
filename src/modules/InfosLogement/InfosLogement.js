@@ -14,7 +14,9 @@ const InfosLogement = () => {
     ))}
     </ul>
   return (
-    <article className="InfosContainer">
+    <section className="InfosContainer">
+      <div className='DataContainer'>
+      <article className='left'>
       <h1 id="TitreAppart">{pageData.title}</h1>
       <p className="location">{pageData.location}</p>
       <ul>
@@ -22,11 +24,15 @@ const InfosLogement = () => {
           <li className="tag" key={tag}>{tag}</li>
         ))}
       </ul>
-      <div className="NameContainer">
-        <span className="name">{pageData.host.name}</span>
+      </article>
+      <article className="NameContainer">
+        <div className='names'>
+        <div className="name">{pageData.host.name}</div>
         <img className="picture" src={pageData.host.picture} alt="img" />
-      </div>
+        </div>
       <Stars logementId={id} />
+      </article>
+      </div>
       <div className='collapses'>
         <div className='collapseleft'>
         <Collapse
@@ -41,7 +47,7 @@ const InfosLogement = () => {
           isOpen={false}
         /></div>
       </div>
-    </article>
+    </section>
   );
 };
 

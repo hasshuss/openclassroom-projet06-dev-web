@@ -10,7 +10,6 @@ const Gallery = () => {
       {data.map((element) => (
         <figure className='galleryElement' key={element.id}>
           <Link to={`/fiche-logement/${element.id}`}>
-          <img src={Background} alt='background' className="background"/>
           <img src={element.cover} alt="Kasa" className="galleryimg" />
           <figcaption className="TitreImage">{element.title}</figcaption>
           </Link>

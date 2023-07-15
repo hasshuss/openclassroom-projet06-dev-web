@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Data from '../../data/data.json';
 import './Carroussel.scss';
+import IMGVector from '../../images/IMGVector.png';
+import IMGVector1 from '../../images/IMGVector1.png'
 
 const Carroussel = ({ logementId }) => {
   const pageData = Data.find((item) => item.id === logementId);
@@ -38,7 +40,7 @@ const Carroussel = ({ logementId }) => {
       <div className="carousel-container">
         <img
           src={pageData.pictures[0]}
-          alt="Carousel Image "
+          alt="Appartement"
           className="carousel-image"
         />
       </div>
@@ -49,16 +51,18 @@ const Carroussel = ({ logementId }) => {
     <div className="carousel-container">
       <img
         src={pageData.pictures[currentImageIndex]}
-        alt="Carousel Image"
+        alt="Appartement"
         className="carousel-image"
       />
-      <button className="carousel-button prev" onClick={handlePrevious}>
-        {'<'}
-      </button>
-      <button className="carousel-button next" onClick={handleNext}>
-        {'>'}
-      </button>
+      <img className="carousel-button prev" alt="prev" src={IMGVector1} onClick={handlePrevious}>
+      </img>
+      <img className="carousel-button next" alt="prev" src={IMGVector} onClick={handleNext}>
+      </img>
+      <div className='counterContainer'>
+      <div>{currentImageIndex+1}/{pageData.pictures.length}</div>
     </div>
+    </div>
+
   );
 };
 

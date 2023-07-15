@@ -31,3 +31,11 @@
   .background{
 @include background;
   }
+
+  @media (max-width: 1040px) {
+
+    #banner{
+      max-width: 768px;
+    }
+
+  }

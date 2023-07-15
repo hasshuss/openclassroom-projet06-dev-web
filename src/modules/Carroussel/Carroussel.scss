@@ -24,7 +24,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -38,4 +37,14 @@
 
 .carousel-button.next {
   right: 0;
+}
+
+.counterContainer{
+  z-index: 3;
+  position:absolute;
+  color:white;
+  font-size: 18px;
+  font-family: Montserrat;
+  left:50%;
+  bottom:20px;
 }
