@@ -7,16 +7,16 @@ const Header = () => {
   return (
     <header>
       <NavLink to='/'>
-      <img src={LOGO} alt="logo" />
+      <img src={LOGO} alt="logo" className='logo'/>
       </NavLink>
       <nav>
         <ul>
-          <li>
+          <li className='navlink'>
             <NavLink activeclassname="active" to="/" exact="true">
               Acceuil
             </NavLink>
           </li>
-          <li>
+          <li className='navlink'>
             <NavLink activeclassname="active" to="/About" exact="true">
               A propos
             </NavLink>

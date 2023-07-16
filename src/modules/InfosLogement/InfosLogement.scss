@@ -47,6 +47,7 @@
   font-weight: 500;
   white-space: pre-line;
   word-break:keep-all;
+  margin-right: 5px;
 }
 
 .equipements{
@@ -83,12 +84,14 @@ flex-direction: column;
   margin-left: auto;
   display:flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .names{
   display:flex;
   flex-direction: row;
   margin-right: auto;
+  align-items: center;
 }
 
 
@@ -97,3 +100,45 @@ flex-direction: column;
     flex-direction: column;
     justify-content: space-between;
   }
+
+
+  @media (max-width: 768px)
+{
+
+.InfosContainer{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.DataContainer{
+  flex-direction: column;
+}
+
+.NameContainer{
+  flex-direction: row-reverse;
+  margin-left: 0;
+  width:100%;
+  align-items:center;
+}
+
+.names{
+  float: right;
+  margin-left: auto;
+  margin-right:0;
+}
+
+.collapses{
+  flex-direction: column;
+}
+
+.collapseleft{
+  width:100%
+}
+.collapseright{
+  width:100%
+}
+
+.tag{
+  margin-top: 5px;
+}
+}

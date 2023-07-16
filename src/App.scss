@@ -66,7 +66,7 @@ ul {
   flex-direction: row;
 }
 
-li {
+.navlink {
   margin-left: 30px;
   font-size: 24px;
   font-weight: 500;
@@ -76,11 +76,38 @@ li {
   text-decoration: underline;
 }
 
+.logo{
+  margin-top: auto;
+  margin-bottom: auto;
+  width:210px;
+  height:68px;
+}
+
 
 @media (max-width: 1040px) {
 
   header{
     max-width: 768px;
   }
+
+}
+
+@media (max-width: 768px){ 
+  
+  header{
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+.navlink{
+  font-size: 12px;
+}
+
+.logo{
+  margin-top: auto;
+  margin-bottom: auto;
+  width:145px;
+  height:46.8px;
+}
 
 }

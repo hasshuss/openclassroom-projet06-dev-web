@@ -1,0 +1,10 @@
+.stars{
+    white-space: nowrap;
+}
+
+@media (max-width: 768px)
+{ 
+    .stars{
+        float:left;
+    }
+}
