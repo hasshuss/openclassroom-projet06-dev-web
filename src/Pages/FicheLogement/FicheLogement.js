@@ -6,6 +6,7 @@ import Carroussel from '../../modules/Carroussel/Carroussel';
 import InfosLogement from '../../modules/InfosLogement/InfosLogement';
 import data from '../../data/data.json'
 import PageErreur from '../PageErreur/PageErreur.js';
+import ScrollToTop from '../../modules/ScrollToTop';
 
 const FicheLogement = () => {
   const { id } = useParams();
@@ -15,6 +16,7 @@ const FicheLogement = () => {
 
   return (
     <div>
+      <ScrollToTop />
       <Header />
       <Carroussel logementId={id} />
       <InfosLogement logementId={id} />

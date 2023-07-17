@@ -3,10 +3,13 @@ import Footer from'../../modules/Footer/Footer';
 import Header from '../../modules/Header';
 import { NavLink } from 'react-router-dom';
 import './PageErreur.scss'
+import ScrollToTop from '../../modules/ScrollToTop';
 
 function PageErreur() {
   return (
+    
 <div className='fullcontainer'>
+<ScrollToTop />
   <Header />
   <div className='errorContainer'>
     <h1 className='e404'>404</h1>

@@ -5,10 +5,12 @@ import Collapse from '../../modules/Collapse/Collapse';
 import Banner from '../../modules/Banner/Banner';
 import IMG from '../../images/IMG2.jpg'
 import './About.scss'
+import ScrollToTop from '../../modules/ScrollToTop';
 
 function About() {
   return (
     <div>
+    <ScrollToTop/>
     <Header />
     <Banner image={IMG}  />
     <div className='container'>
