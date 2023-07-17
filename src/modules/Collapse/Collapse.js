@@ -12,7 +12,7 @@ const Collapse = ({ title, content, isOpen }) => {
   return (
     <div className='collapse'>
       <div  onClick={handleToggle} className='title'>
-        <h3>{title}</h3>
+        <div className='titre'>{title}</div>
         <img
           src={Vector}
           className={`arrow ${isCollapsed ? '' : 'rotate'}`}

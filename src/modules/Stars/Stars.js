@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Data from '../../data/data.json';
 import staractive from '../../images/star-active.png'
 import starinactive from '../../images/star-inactive.png'
+import './Stars.scss'
 
 const Rating = () => {
     const { id } = useParams();
@@ -11,41 +12,41 @@ const Rating = () => {
 
     if (rating === "5") {
         return (
-            <div className='stars'><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={staractive}/></div>
+            <div className='stars'><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/></div>
         );
     }
     
     if (rating === "4") {
         return (
-            <div className='stars'><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={starinactive}/></div>
+            <div className='stars'><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={starinactive}/></div>
 
         );
     }
 
     if (rating === "3") {
         return (
-            <div className='stars'><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/></div>
+            <div className='stars'><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/></div>
 
         );
     }
 
     if (rating === "2") {
         return (
-            <div className='stars'><img alt="img" src={staractive}/><img alt="img" src={staractive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/></div>
+            <div className='stars'><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/></div>
 
         );
     }
 
     if (rating === "1") {
         return (
-            <div className='stars'><img alt="img" src={staractive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/></div>
+            <div className='stars'><img className="star" alt="img" src={staractive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/></div>
 
         );
     }
     
     if (rating === "0") {
         return (
-            <div className='stars'><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/><img alt="img" src={starinactive}/></div>
+            <div className='stars'><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/><img className="star" alt="img" src={starinactive}/></div>
 
         );
     }

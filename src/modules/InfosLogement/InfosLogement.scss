@@ -15,12 +15,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   margin-left: 0;
   padding-top:3px;
   padding-bottom:3px;
   margin-right: 10px;
+  white-space: nowrap;
 }
 
 .InfosContainer{
@@ -48,6 +49,8 @@
   white-space: pre-line;
   word-break:keep-all;
   margin-right: 5px;
+  text-align: right;
+  width:93px;
 }
 
 .equipements{
@@ -105,6 +108,15 @@ flex-direction: column;
   @media (max-width: 768px)
 {
 
+  #TitreAppart{
+font-size: 18px;
+  }
+
+  .location{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
 .InfosContainer{
   margin-left: 10px;
   margin-right: 10px;
@@ -134,11 +146,34 @@ flex-direction: column;
 .collapseleft{
   width:100%
 }
+
 .collapseright{
   width:100%
 }
 
-.tag{
-  margin-top: 5px;
+.name{
+  font-size: 12px;
+  width:60px
 }
+
+.tag{
+  margin-top: 10px;
+  font-size: 10px;
+  width: 100px;
+  height: 18px;
+}
+
+.picture{
+  width:32px;
+  height:32px;
+}
+
+.NameContainer{
+  margin-top: 10px;
+}
+
+.equipement{
+  font-size: 10px;
+}
+
 }

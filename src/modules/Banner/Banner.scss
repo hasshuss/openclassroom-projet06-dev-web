@@ -5,7 +5,7 @@
     max-height: 223px;
     width: 100%;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 20px;
   }
   
   #banner {
@@ -26,6 +26,7 @@
     font-size: 48px;
     font-weight: 500;
     opacity: 100%;
+    white-space: nowrap;
   }
 
   .background{
@@ -45,6 +46,11 @@
     #banner{
       margin-left: 10px;
       margin-right:10px;
+      height:111px;
+    }
+
+    #imgbanner{
+      height:111px;
     }
 
     #TitreAcceuil{

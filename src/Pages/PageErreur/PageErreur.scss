@@ -1,0 +1,55 @@
+@import '../../mixins.scss';
+
+
+.errorContainer {
+    @include margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* Ajout de l'espace autour des éléments */
+    height: 668px;
+  }
+  
+  .errorContainer > * {
+    margin-top: auto; /* Ajout d'un espace en haut de chaque élément */
+    margin-bottom: auto; /* Ajout d'un espace en bas de chaque élément */
+  }
+
+.e404{
+    font-size: 288px;
+    color:#FF6060;
+    font-weight: 500;
+}
+
+.contentError{
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.LinkError{
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+.contentError{
+    font-size: 18px;
+}
+
+.e404{
+    font-size: 96px;
+}
+.LinkError{
+    font-size: 14px;
+}
+
+.errorContainer {
+
+    height:500px
+}
+
+}

@@ -1,6 +1,6 @@
 
 
-h3{
+.titre{
     color:white;
     margin-top: auto;
     margin-bottom:auto;
@@ -47,4 +47,22 @@ h3{
 .open {
     display:flex;
     max-height: 500px; 
+  }
+
+  @media (max-width: 768px){
+
+    .titre{
+      font-size: 13px;
+    }
+
+    .title{
+     height:30px;
+     padding-top: 0;
+     padding-bottom: 0;
+    }
+    
+    .content{
+      font-size: 10px;
+    }
+
   }
