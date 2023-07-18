@@ -3,16 +3,16 @@ import Footer from'../../modules/Footer/Footer';
 import Header from '../../modules/Header';
 import Collapse from '../../modules/Collapse/Collapse';
 import Banner from '../../modules/Banner/Banner';
-import IMG from '../../images/IMG2.jpg'
 import './About.scss'
 import ScrollToTop from '../../modules/ScrollToTop';
 
 function About() {
+  const imageUrl = 'https://www.cheikh-hussein.com/data/IMG2.jpg';
   return (
     <div>
     <ScrollToTop/>
     <Header />
-    <Banner image={IMG}  />
+    <Banner image={imageUrl}  />
     <div className='container'>
 <div className='col'>      <Collapse
           title="Fiabilité"

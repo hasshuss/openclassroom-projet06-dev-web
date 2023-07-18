@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Acceuil from "../Pages/Acceuil/Acceuil";
 import FicheLogement from "../Pages/FicheLogement/FicheLogement";
 import PageErreur from "../Pages/PageErreur/PageErreur";
@@ -10,6 +10,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Acceuil />} />
+        <Route path="/Kasa" element={<Acceuil />} />
         <Route path="/fiche-logement/:id" element={<FicheLogement />} />
         <Route path="/About" element={<About/>}/>
         <Route path="*" element={<PageErreur />} />

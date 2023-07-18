@@ -22,6 +22,7 @@
   padding-bottom:3px;
   margin-right: 10px;
   white-space: nowrap;
+  @include shadow;
 }
 
 .InfosContainer{
@@ -34,6 +35,7 @@
   border-radius: 50px;
   object-fit: cover;
   width: 80px;
+  @include shadow;
 }
 
 .location{
